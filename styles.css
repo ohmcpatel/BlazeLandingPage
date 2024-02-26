@@ -1,0 +1,374 @@
+/* Import Google Fonts or specify local fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Apply fonts to specific elements */
+
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: black
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 230, 230, .0);
+}
+
+.gradient-background {
+  background: linear-gradient(to bottom, rgba(255, 230, 230, .1), rgba(255, 230, 230, .0));
+  color: white;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  padding-left: 71px;
+  width: fit-content;
+}
+
+.logo {
+  transform: scale(1.1);
+  /* Scale the image to 50% of its original size */
+  padding-right: 17px;
+  height: fit-content;
+  margin-top: 60px;
+}
+
+.titlename {
+  color: black;
+  font-size: 60px;
+  font-weight: 600; 
+  margin-bottom: 0px;
+  height: fit-content;
+}
+
+
+.header-content{
+  margin-left: 126px; 
+  display: flex;
+  flex-direction: row;
+}
+.header-tag {
+  background-color:#FFE6E6;
+  color: #FF2626;
+  border-radius: 30px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 275px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.info-left {
+  width: fit-content;
+  margin-top: 60px;
+}
+.first-row{
+  margin: 0px;
+  font-size: 61.25px;
+}
+.second-row-main {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;    
+}
+
+.second-row-with, .second-row-blaze {
+  margin: 0px;
+  font-size: 61.25px;
+}
+
+.second-row-blaze {
+  color: #FF2626;
+}
+
+.sub-tag {
+  color: #171717;
+  text-align: left;
+  width: 470px;
+  line-height: 200%;
+}
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.CTA1 {
+  display: flex;
+  flex-direction: row;  
+  background-color: #FF2626;
+  border-radius: 30px;
+  height: fit-content;
+  border: none;
+  padding: 20px;
+  gap: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.CTA1-text {
+  color: white;
+  font-size: 13.62;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.CTA2 {
+  display: flex;
+  flex-direction: row;  
+  background-color: white;
+  border-radius: 30px;
+  height: fit-content;
+  border: none;
+  padding: 13px;
+  gap: 10px;
+  padding-left: 22px;
+  padding-right: 22px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.CTA2-text {
+  font-size: 13.62;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0;
+
+}
+
+.CTA1:hover {
+  background-color: #ff4747;
+  transform: scale(1.05); /* Grow slightly on hover */
+}
+
+.CTA2:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.05); /* Grow slightly on hover */
+}
+
+.picture-right {
+  margin-left: 200px;
+}
+
+.top-categories-title{
+  font-weight: 700;
+  font-size: 52px;
+}
+
+@media (min-width: 900px) {
+.top-categories-container {
+  display: flex;  
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+}
+@media (max-width: 900px) {
+  .top-categories-container {
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+.top-categories-item {
+  width: 258px;
+  height: 362px;
+  border-color: #FFE6E6;
+  border-width: 2px; 
+  border-style: solid;
+  border-radius: 31px;
+}
+
+.top-categories-item-active {
+  width: 258px;
+  height: 362px;
+  background-color: #FF2626;
+  border-radius: 31px;
+  filter: drop-shadow(rgba(255, 38, 38, 0.25) 0 15.56px 15px);
+}
+
+.top-categories-item-title {
+  font-weight: 600;
+  font-size: 23.34px;
+
+
+}
+.top-categories-item-active-title {
+  font-weight: 600;
+  font-size: 23.34px;
+  color: white;
+}
+
+.image-items {
+  width: 134px;
+  border-radius: 600px;
+  filter: drop-shadow(rgba(174, 174, 174, 0.25) 0 15.56px 15px);
+  margin-top: 80px;
+}
+
+.image-items-cheeto {
+  width: 134px;
+  border-radius: 600px;
+  filter: drop-shadow(rgba(174, 174, 174, 0.25) 0 15.56px 15px);
+  margin-top: 80px;
+}
+
+.safety {
+  margin-left: 126px;
+  display: flex;
+  flex-direction: row;
+}
+
+.safety-left {
+  width: 483px;
+  text-align: left;
+
+}
+
+.safety-text {
+  font-weight: 700;
+  font-size: 52px;
+  margin-top: 200px;
+}
+
+.safety-subtext-container {
+  width: 417px; 
+
+}
+
+.safety-subtext {
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 15.56px;
+  color: #8B8B8B;
+  margin-bottom: 60px;
+}
+
+.safety-right {
+  margin-top: 80px;
+  margin-left: 240px;
+}
+
+.process {
+  margin-left: 200px;
+}
+
+.ios {
+  scale: .80;
+  margin-left: 100px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer {
+  font-size: 13.62;
+  font-weight: 500;
+  color: #171717;
+  text-align: center;
+}
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form styles */
+form {
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  width: 94%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FF2626;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF2626;
+}
+
+.a {
+  text-decoration: none;
+}
