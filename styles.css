@@ -658,16 +658,15 @@ button[type="submit"]:hover {
   /* Show the video on mobile */
   .displayContainer video {
     display: block;
-    margin-right: 700px;
-    margin-left: 0px;
   }
 
 
 .video {
-  margin-left: -45px !important;
   scale: 1.2;
   margin-top: 0px;
   margin-bottom: 110px;
+  width: fit-content;
+  margin-left: 165px;
 }
 }
 
