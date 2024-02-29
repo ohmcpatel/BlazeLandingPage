@@ -622,3 +622,52 @@ button[type="submit"]:hover {
     transition: background-color 0.3s ease;
   }
 }
+
+.displayContainer {
+  text-align: left; /* Align content to the left */
+  height: auto;
+}
+
+.display {
+  display: inline-block; /* Ensure the image behaves as an inline-block element */
+  vertical-align: middle; /* Align the image vertically in case there's other content */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+}
+
+/* CSS for desktop (min-width: 768px) */
+@media (min-width: 550px) {
+  /* Hide the video on desktop */
+  .displayContainer video {
+    display: none;
+  }
+
+  /* Show the image on desktop */
+  .displayContainer img {
+    display: block;
+    margin-bottom: 80px;
+  }
+}
+
+/* CSS for mobile (max-width: 767px) */
+@media (max-width: 550px) {
+  /* Hide the image on mobile */
+  .displayContainer img {
+    display: none;
+  }
+
+  /* Show the video on mobile */
+  .displayContainer video {
+    display: block;
+    margin-right: 700px;
+    margin-left: 0px;
+  }
+
+
+.video {
+  margin-left: -45px !important;
+  scale: 1.2;
+  margin-top: 0px;
+  margin-bottom: 110px;
+}
+}
+
