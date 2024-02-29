@@ -649,7 +649,7 @@ button[type="submit"]:hover {
   /* Adjust container size */
   .displayContainer {
     height: auto; /* Set height to auto */
-    width: auto; /* Set width to auto */
+    width: fit-content; /* Set width to auto */
     max-width: 100%; /* Set maximum width to 100% of the parent container */
   }
 }
@@ -669,7 +669,7 @@ button[type="submit"]:hover {
   /* Adjust container size */
   .displayContainer {
     height: auto; /* Set height to auto */
-    width: auto; /* Set width to auto */
+    width: 200px; /* Set width to auto */
     max-width: 100%; /* Set maximum width to 100% of the parent container */
   }
 
