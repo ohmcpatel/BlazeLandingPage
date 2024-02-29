@@ -165,6 +165,7 @@ body {
 
   .CTA1Bottom {
     margin: 0 auto;
+    margin-left: 17.5%;
   }
 
   .CTA2 {
@@ -172,26 +173,29 @@ body {
     margin-bottom: 0%;
     margin-right: 0px;
   }
+
 }
 
 
 
 @media(max-width: 600px){
   .safety-text {
-    margin-right: 7%;
-    text-align: center;
+    margin-left: 14%;
   }
   .safety-subtext {
     width: 400px;
     text-align: center;
-    margin-right: 10%;
+    margin-left: 6%;
   }
   .CTA1Bottom {
-    margin-right: 20%;
+    margin-left: 90px;
+    margin-bottom: 90px;
   }
 
 
 }
+
+
 
 
 .CTA1 {
@@ -387,7 +391,7 @@ body {
 }
 
 .safety-left {
-  width: 483px;
+  width: fit-content;
   text-align: left;
 
 }
