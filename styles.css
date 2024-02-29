@@ -52,12 +52,20 @@ body {
   height: fit-content;
 }
 
-
 .header-content{
-  margin-left: 126px; 
+  margin-left: 8%; 
   display: flex;
   flex-direction: row;
 }
+
+@media (max-width: 1200px) {
+.header-content{
+  margin-left: 10; 
+  display: flex;
+  flex-direction: row;
+}
+}
+
 .header-tag {
   background-color:#FFE6E6;
   color: #FF2626;
@@ -73,7 +81,7 @@ body {
 .header-text {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: fit-content;
 }
 .info-left {
   width: fit-content;
@@ -109,12 +117,56 @@ body {
   flex-direction: row;
   gap: 30px;
 }
+
+@media(max-width: 600px){
+  .header-buttons {
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 40px;
+  }
+  .sub-tag {
+    width: 400px;
+    text-align: center;
+    margin-left: 3%;
+  }
+
+  .header-content {
+    margin-left: 7%;
+  }
+  .first-row {
+    font-size: 50px;
+    margin: 0 auto;
+    
+  }
+  .second-row-with {
+    font-size: 50px;
+  }
+  .second-row-blaze {
+    font-size: 50px;
+  }
+
+  .header-tag {
+    display: none;
+    margin: 0 auto; 
+    margin-top: 0px;
+  }
+
+  .second-row-main {
+    margin: 0 auto;
+  }
+
+  .title {
+    margin: 0 auto; 
+    padding: 0px;
+  }
+}
 .CTA1 {
   display: flex;
   flex-direction: row;  
   background-color: #FF2626;
   border-radius: 30px;
   height: fit-content;
+  width: 270px;
   border: none;
   padding: 20px;
   gap: 10px;
@@ -138,6 +190,7 @@ body {
   height: fit-content;
   border: none;
   padding: 13px;
+  width: 250px;
   gap: 10px;
   padding-left: 22px;
   padding-right: 22px;
@@ -429,6 +482,15 @@ button[type="submit"]:hover {
 /* Hide the picture-right div and its contents at a screen width of 900px and below */
 @media (max-width: 900px) {
   .picture-right {
+    display: none;
+  }
+}
+
+.deliveryImage {
+  display: block;
+}
+@media (max-width: 700px) {
+  .deliveryImage {
     display: none;
   }
 }
