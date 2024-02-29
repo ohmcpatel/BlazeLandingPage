@@ -623,10 +623,7 @@ button[type="submit"]:hover {
   }
 }
 
-.displayContainer {
-  text-align: left; /* Align content to the left */
-  height: auto;
-}
+
 
 .display {
   display: inline-block; /* Ensure the image behaves as an inline-block element */
