@@ -164,16 +164,12 @@ body {
   transform: scale(1.05); /* Grow slightly on hover */
 }
 
-.picture-right {
-  margin-left: 200px;
-}
-
 .top-categories-title{
   font-weight: 700;
   font-size: 52px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
 .top-categories-container {
   display: flex;  
   flex-direction: row;
@@ -181,7 +177,7 @@ body {
   gap: 30px;
 }
 }
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .top-categories-container {
     display: flex;  
     flex-direction: column;
@@ -198,27 +194,56 @@ body {
   border-width: 2px; 
   border-style: solid;
   border-radius: 31px;
+  transition: all 0.3s ease; /* Add transition for smooth hover effect */
 }
 
-.top-categories-item-active {
-  width: 258px;
-  height: 362px;
-  background-color: #FF2626;
-  border-radius: 31px;
-  filter: drop-shadow(rgba(255, 38, 38, 0.25) 0 15.56px 15px);
+/* Apply animation to background color */
+@keyframes backgroundFade {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #FF2626;
+  }
+}
+
+/* Apply animation to box scaling */
+@keyframes boxScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+  }
+}
+
+.top-categories-item:hover {
+  animation: backgroundFade 0.3s ease forwards, boxScale 0.3s ease forwards; /* Animate background color and box scaling on hover */
+  border-color: transparent; /* Remove border color on hover */
+  filter: drop-shadow(rgba(255, 38, 38, 0.25) 0 15.56px 15px); /* Add drop shadow on hover */
 }
 
 .top-categories-item-title {
   font-weight: 600;
   font-size: 23.34px;
-
-
+  transition: all 0.3s ease; /* Add transition for smooth text scaling */
 }
-.top-categories-item-active-title {
-  font-weight: 600;
-  font-size: 23.34px;
-  color: white;
+
+/* Apply animation to title scaling */
+@keyframes titleScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+  }
 }
+
+.top-categories-item:hover .top-categories-item-title {
+  animation: titleScale 0.3s ease forwards; /* Animate text scaling on hover */
+  color: white; /* Change title color on hover */
+}
+
 
 .image-items {
   width: 134px;
@@ -235,7 +260,7 @@ body {
 }
 
 .safety {
-  margin-left: 126px;
+  margin: 10%;
   display: flex;
   flex-direction: row;
 }
@@ -270,9 +295,6 @@ body {
   margin-left: 240px;
 }
 
-.process {
-  margin-left: 200px;
-}
 
 .ios {
   scale: .80;
@@ -284,6 +306,7 @@ body {
   flex-direction: row;
   gap: 15px;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .footer {
@@ -372,3 +395,43 @@ button[type="submit"]:hover {
 .a {
   text-decoration: none;
 }
+
+/* Initially hide the infoPhone image */
+.infoPhone {
+  display: none;
+}
+
+.info-image {
+  display: block;
+  margin: 0 auto; /* Horizontally center the image */
+
+}
+
+/* Show the infoPhone image and hide the info image at 900px and above */
+@media (max-width: 1100px) {
+  .info-image {
+    display: none;
+    margin: 0 auto; /* Horizontally center the image */
+  }
+
+  .infoPhone {
+    display: block;
+    margin: 0 auto; /* Horizontally center the image */
+  }
+}
+
+
+.picture-right {
+  display: block;
+  margin-left: 200px;
+}
+
+/* Hide the picture-right div and its contents at a screen width of 900px and below */
+@media (max-width: 900px) {
+  .picture-right {
+    display: none;
+  }
+}
+
+
+
