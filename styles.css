@@ -3,6 +3,9 @@
 
 /* Apply fonts to specific elements */
 
+/* body, html{
+  overflow-x: hidden;
+} */
 
 h1,
 h2,
@@ -27,7 +30,7 @@ body {
   background: linear-gradient(to bottom, rgba(255, 230, 230, .1), rgba(255, 230, 230, .0));
   color: white;
   text-align: center;
-  width: 100%;
+  width: 80%;
 }
 
 .title {
