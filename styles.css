@@ -172,7 +172,15 @@ body {
     margin-left: 11%;
     margin-bottom: 0%;
     margin-right: 0px;
+    /* Add drop shadow */
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
   }
+
+  .CTA2-text {
+    font-size: 15px;
+  }
+
 
 }
 
@@ -399,7 +407,7 @@ body {
 .safety-text {
   font-weight: 700;
   font-size: 52px;
-  margin-top: 200px;
+  margin-top: 70px;
 }
 
 .safety-subtext-container {
