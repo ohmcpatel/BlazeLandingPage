@@ -27,6 +27,7 @@ body {
   background: linear-gradient(to bottom, rgba(255, 230, 230, .1), rgba(255, 230, 230, .0));
   color: white;
   text-align: center;
+  width: 100%;
 }
 
 .title {
@@ -266,7 +267,15 @@ body {
   font-size: 52px;
 }
 
+.top-categories {
+  width: fit-content;
+  justify-content: center;
+}
+
 @media (min-width: 1200px) {
+.top-categories {
+  margin-left: 10%;
+}
 .top-categories-container {
   display: flex;  
   flex-direction: row;
