@@ -674,10 +674,10 @@ button[type="submit"]:hover {
   }
 
   .video {
-    scale: 1.4;
+    scale: 2.8;
     margin-top: 0px;
     margin-bottom: 110px;
     max-width: 100%;
-    margin-left: 165px;
+    margin-left: 215px;
   }
 }
