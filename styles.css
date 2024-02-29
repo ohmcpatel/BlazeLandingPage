@@ -497,15 +497,6 @@ input[type="email"] {
   margin-bottom: 10px;
 }
 
-input[type="emailAlone"] {
-  width: 95.5%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
 button[type="submit"] {
   width: 100%;
   padding: 10px;
@@ -519,22 +510,6 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #FF2626;
-}
-
-button[type="submitAlone"] {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #FF2626;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submitAlone"]:hover {
   background-color: #FF2626;
 }
 
