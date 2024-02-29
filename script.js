@@ -35,14 +35,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to show modal
     function showModal() {
-        console.log('modal');
         modal.style.display = 'block';
     }
 
-    // Function to show video
-    function showVideo() {
-        video.style.display = 'block';
-    }
 
     function sendEmailToServer(email) {
         const db = getFirestore(app);
