@@ -166,6 +166,7 @@ body {
   .CTA2 {
     margin-left: 11%;
     margin-bottom: 0%;
+    margin-right: 0px;
   }
 }
 
@@ -274,6 +275,7 @@ body {
 }
 }
 @media (max-width: 1200px) {
+
   .top-categories-container {
     display: flex;  
     flex-direction: column;
@@ -291,6 +293,12 @@ body {
   border-style: solid;
   border-radius: 31px;
   transition: all 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+@media (max-width: 490px) {
+  .top-categories {
+    margin-left: 20%;
+  }
 }
 
 /* Apply animation to background color */
@@ -574,7 +582,7 @@ button[type="submit"]:hover {
   }
   
   input[type="email"] {
-    width: 85.5%;
+    width: 75.5%;
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -583,7 +591,7 @@ button[type="submit"]:hover {
   }
 
   button[type="submit"] {
-    width: 90%;
+    width: 80%;
     padding: 10px;
     font-size: 16px;
     background-color: #FF2626;
