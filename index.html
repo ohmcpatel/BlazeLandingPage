@@ -37,7 +37,7 @@
           </div>
           <div class="emailAdd">
             <h2 class="enterEmail">Please Enter Your Email</h2>
-            <p class="emailSubtag">You'll be the first to know when we launch!</p>
+            <p id="top_tag" class="emailSubtag">You'll be the first to know when we launch!</p>
             <form id="emailForm" action="/" method="post">
                 <input class="emailInputBox" id="emailInput" type="email" name="email" placeholder="Enter your email" required>
                 <button type="submit">Subscribe</button>
@@ -118,8 +118,8 @@
   <div id="modal-content" class="modal-content">
       <span id="close" class="close">&times;</span>
       <h2>Please Enter Your Email</h2>
-      <p>You'll be the first to know when we launch!</p>
-      <form id="emailForm" action="/thankyou" method="post">
+      <div>You'll be the first to know when we launch!</div>
+      <form id="emailForm" action="/thankyou.html">
           <input id="emailInput" type="email" name="email" placeholder="Enter your email" required>
           <button type="submit">Subscribe</button>
       </form>

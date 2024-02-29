@@ -58,10 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
         var email = document.getElementById('emailInput').value;
         // Get the entered email address
         var modalContent = document.getElementById('modal-content');
+        var top_tag = document.getElementById("top_tag");
+        modalContent.innerHTML = "<span class='close'>&times;</span><h2>You're on the Waiting List!</h2><p>Thanks for signing up, we'll send you an email when we launch!</p>";        
+        top_tag.innerHTML = "Thanks for signing up, we'll send you an email when we launch!";
         sendEmailToServer(email);
         // Update the modal content with the email message
-        modalContent.innerHTML = "<span class='close'>&times;</span><h2>You're on the Waiting List!</h2><p>Thanks for signing up, we'll send you an email when we launch!</p>";        
-        // Example: sendEmailToServer(email);
+       
     });
 
     // Event listener for modal button click
