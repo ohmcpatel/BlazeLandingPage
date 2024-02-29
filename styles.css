@@ -277,7 +277,7 @@ body {
 
 @media (min-width: 1200px) {
 .top-categories {
-  margin-left: 10%;
+  margin-left: 15%;
 }
 .top-categories-container {
   display: flex;  
@@ -287,6 +287,10 @@ body {
 }
 }
 @media (max-width: 1200px) {
+
+  .top-categories {
+    margin-left: 22%;
+  }
 
   .top-categories-container {
     display: flex;  
