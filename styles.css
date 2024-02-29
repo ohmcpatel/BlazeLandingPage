@@ -33,7 +33,6 @@ body {
   display: flex;
   flex-direction: row;
   padding-left: 71px;
-  width: fit-content;
 }
 
 .logo {
@@ -90,6 +89,7 @@ body {
 .first-row{
   margin: 0px;
   font-size: 61.25px;
+  width: 500px;
 }
 .second-row-main {
   display: flex;
@@ -127,15 +127,15 @@ body {
   .sub-tag {
     width: 400px;
     text-align: center;
-    margin-left: 3%;
+    margin-left: 8%;
   }
 
   .header-content {
-    margin-left: 7%;
+    margin-left: 0%;
   }
   .first-row {
     font-size: 50px;
-    margin: 0 auto;
+    margin-right: 20%;
     
   }
   .second-row-with {
@@ -156,8 +156,7 @@ body {
   }
 
   .title {
-    margin: 0 auto; 
-    padding: 0px;
+    margin-left: 13%;
   }
 
   .CTA1Bottom {
@@ -165,7 +164,8 @@ body {
   }
 
   .CTA2 {
-    margin-left: 2%;
+    margin-left: 11%;
+    margin-bottom: 0%;
   }
 }
 
@@ -357,6 +357,7 @@ body {
 
 .safety {
   margin: 10%;
+  margin-top: 0%;
   display: flex;
   flex-direction: row;
 }
@@ -464,7 +465,7 @@ form {
 }
 
 input[type="email"] {
-  width: 94%;
+  width: 95.5%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -531,6 +532,7 @@ button[type="submit"]:hover {
 
 .deliveryImage {
   display: block;
+  margin-top: 10%;
 }
 @media (max-width: 700px) {
   .deliveryImage {
@@ -538,5 +540,57 @@ button[type="submit"]:hover {
   }
 }
 
+.emailAdd {
+  margin-top: 60px;
+  margin: 15px;
+}
+
+.enterEmail {
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+}
+
+.emailSubtag {
+  text-align: left;
+}
+
+.emailInputBox {
+  margin: 0px; 
+}
 
 
+@media (max-width: 600px) {
+  .emailAdd {
+    margin-top: 30px;
+  }
+  
+  .enterEmail {
+    text-align: center;
+  }
+  
+  .emailSubtag {
+    text-align: center;
+  }
+  
+  input[type="email"] {
+    width: 85.5%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  button[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #FF2626;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+}
