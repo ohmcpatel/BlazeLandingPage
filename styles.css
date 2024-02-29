@@ -159,8 +159,51 @@ body {
     margin: 0 auto; 
     padding: 0px;
   }
+
+  .CTA1Bottom {
+    margin: 0 auto;
+  }
+
+  .CTA2 {
+    margin-left: 2%;
+  }
 }
+
+
+
+@media(max-width: 600px){
+  .safety-text {
+    margin-right: 7%;
+    text-align: center;
+  }
+  .safety-subtext {
+    width: 400px;
+    text-align: center;
+    margin-right: 10%;
+  }
+  .CTA1Bottom {
+    margin-right: 20%;
+  }
+
+
+}
+
+
 .CTA1 {
+  display: flex;
+  flex-direction: row;  
+  background-color: #FF2626;
+  border-radius: 30px;
+  height: fit-content;
+  width: 270px;
+  border: none;
+  padding: 20px;
+  gap: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.CTA1Bottom {
   display: flex;
   flex-direction: row;  
   background-color: #FF2626;
