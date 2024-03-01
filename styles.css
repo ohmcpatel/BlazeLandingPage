@@ -95,8 +95,8 @@ body {
 }
 .first-row{
   margin: 0px;
-  font-size: 61.25px;
-  width: 500px;
+  font-size: 50px;
+  width: 490px;
 }
 .second-row-main {
   display: flex;
@@ -106,7 +106,7 @@ body {
 
 .second-row-with, .second-row-blaze {
   margin: 0px;
-  font-size: 61.25px;
+  font-size: 50px;
 }
 
 .second-row-blaze {
@@ -141,15 +141,15 @@ body {
     margin-left: 0%;
   }
   .first-row {
-    font-size: 50px;
+    font-size: 40px;
     margin-right: 20%;
     
   }
   .second-row-with {
-    font-size: 50px;
+    font-size: 40px;
   }
   .second-row-blaze {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .header-tag {
@@ -698,4 +698,30 @@ button[type="submit"]:hover {
     max-height: 100px;
     margin-left: 215px;
   }
+}
+
+
+.process {
+  margin-left: 20%;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 28%;
+}
+
+/* Styling the title */
+.titleCon {
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling the description */
+.description {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
