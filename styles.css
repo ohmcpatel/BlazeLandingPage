@@ -37,6 +37,7 @@ body {
   display: flex;
   flex-direction: row;
   padding-left: 71px;
+  margin-bottom: 50px;
 }
 
 .logo {
@@ -163,6 +164,7 @@ body {
 
   .title {
     margin-left: 13%;
+    margin-bottom: 0px;
   }
 
   .CTA1Bottom {
