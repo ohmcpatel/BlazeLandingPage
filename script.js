@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.getElementById('emailForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
+        console.log("Email submitted: ");
 
         var email = document.getElementById('emailInput').value;
         // Get the entered email address
@@ -61,6 +62,19 @@ document.addEventListener('DOMContentLoaded', function() {
         var top_tag = document.getElementById("top_tag");
         modalContent.innerHTML = "<span class='close'>&times;</span><h2>You're on the Waiting List!</h2><p>Thanks for signing up, we'll send you an email when we launch!</p>";        
         top_tag.innerHTML = "Thanks for signing up, we'll send you an email when we launch!";
+        sendEmailToServer(email);
+        // Update the modal content with the email message
+       
+    });
+
+    document.getElementById('emailForm2').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        console.log("Email submitted2: ");
+
+        var email = document.getElementById('emailInput2').value;
+        // Get the entered email address
+        var modalContent = document.getElementById('modal-content2');
+        modalContent.innerHTML = "<span class='close'>&times;</span><h2>You're on the Waiting List!</h2><p>Thanks for signing up, we'll send you an email when we launch!</p>";        
         sendEmailToServer(email);
         // Update the modal content with the email message
        

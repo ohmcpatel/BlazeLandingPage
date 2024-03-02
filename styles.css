@@ -327,6 +327,13 @@ body {
   border-radius: 31px;
   transition: all 0.3s ease; /* Add transition for smooth hover effect */
 }
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 15%;
+}
 }
 @media (max-width: 900px) {
 
@@ -365,6 +372,14 @@ body {
     filter: drop-shadow(rgba(174, 174, 174, 0.25) 0 15.56px 15px);
     margin-top: 20px;
   }
+
+  .container {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 10%;
+  }
+  
 }
 
 
@@ -505,7 +520,7 @@ section {
 }
 
 /* Modal content */
-.modal-content {
+.modal-content, .modal-content2 {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
@@ -742,13 +757,6 @@ button[type="submit"]:hover {
 }
 
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  margin-left: 28%;
-}
-
 /* Styling the title */
 .titleCon {
   font-size: 52px;
@@ -758,7 +766,7 @@ button[type="submit"]:hover {
 
 /* Styling the description */
 .description {
-  font-size: 1.1rem;
+  font-size: 20px;
   line-height: 1.6;
 }
 
