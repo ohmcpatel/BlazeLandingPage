@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var email = document.getElementById('emailInput').value;
         // Get the entered email address
-        var modalContent = document.getElementById('modal-content');
+        var modalContent = document.getElementById('modal-content2');
         var top_tag = document.getElementById("top_tag");
         modalContent.innerHTML = "<span class='close'>&times;</span><h2>You're on the Waiting List!</h2><p>Thanks for signing up, we'll send you an email when we launch!</p>";        
         top_tag.innerHTML = "Thanks for signing up, we'll send you an email when we launch!";
@@ -73,6 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var email = document.getElementById('emailInput2').value;
         // Get the entered email address
+        var top_tag = document.getElementById("top_tag");
+        top_tag.innerHTML = "Thanks for signing up, we'll send you an email when we launch!";
         var modalContent = document.getElementById('modal-content2');
         modalContent.innerHTML = "<span class='close'>&times;</span><h2>You're on the Waiting List!</h2><p>Thanks for signing up, we'll send you an email when we launch!</p>";        
         sendEmailToServer(email);
